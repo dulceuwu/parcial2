@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--Abrimos con html5-->
+<html> <!--abrimos html-->
+<head> <!--abrimos head para hacer configuraciones que no verán los usuarios-->
+<title>Suscribete a nuestro newspaper</title> <!---Titulo de la pagina-->
+<link rel="stylesheet" type="text/css" href="style/style.css"> <!---Vinculamos con esto a la hoja de estilos .css-->
+<meta charset="utf-8"> <!--Permite especificar los tipos de caracteres que podemos añadir al documento-->
+</head> <!--Cerramos head-->
+<body> <!--Abrimos el cuerpo-->
+<div class="container"> <!---Creamos un contenedor principal donde almacenaremos y personalizaremos mejor-->
+	<header>
+
+		<h3> ¡Bienvenidos a comunidad tech Apure! </h3> <!---Titulo visible para el usuario-->
+		<p>
+			Estas son las creadoras del sitio web con las siguientes habilidades en 
+			<ul> <!--Elaboramos una pequeña lista de ejemplo en nuestro header-->
+				<li>Programación</li>
+				<li>Diseño sencillo</li>
+				<li>Informática</li>
+			</ul> <!--Cerramos nuestra lista-->
+		</p>
+		<br>	<!--Hacemos salto de línea-->
+		<i class="by">Hecho por: Dulce Zapata y Joskani Mendoza</i> <!--Dejamos nuestra firma-->
+		<nav> <!-- Nuestra barra de navegación, con ella podemos dirigirnos a otras páginas de nuestro repositorio-->
+			<ul>
+				<li><a href="index.html">Inicio</a></li> <!--Conectamos nuestro website a la pagina principal-->
+				<li><a href="formulario.html">Registrese aquí en nuestro newspaper</a></li> <!--conectamos nuestro website al formulario de registro-->
+				<li><a href="mostrarusuario.php">Archivo de registro</a></li>
+			</ul>
+		</nav> <!--Cerramos nuestra barra de navegación-->
+	</header> <!--Cerramos nuestro header-->
+    <br>
+    <br>
+    <div class="formulario">  <!--Abrimos un contenedor de tipo formulario que personalizaremos-->
+    <h1>Suscribase en nuestro newspaper</h1> <!--Titulo de nuestro formulario-->
+    
+    <form action="registro.php" method="post"> <!--Acción del formulario, aqui le decimos que cuando se envíe,
+    debe ejecutar el código en el archivo registro.php. 
+    
+    Con el method="post" le estamos diciendo que nos actualiza la página, enviando la información al servidor
+    y recogiendo los datos introducidos en los input-->
+        <tr> <!--Abrimos una tabla-->
+            <div class="input"><!--cramos otro contenedor interno para cada input, con la intención de 
+            personalizar pequeños detalles-->
+            <!--Aqui comenzamos a crear los campos-->
+                <td><h3 class="campo-texto">Nombres</h3></td>  <!--Titulo del campo-->
+                <td><input type="text" name="nombres" class="campo"> </td> <!--Con input, creamos el campo,
+                con el atributo name="0000" especificamos un nombre que nos podría servir para almacenar datos
+                en alguna variable declarada en nuestro servidor con el método POST-->
+
+                <td><h3 class="campo-texto">Apellidos</h3></td> <!--Titulo del campo-->
+                <td><input type="text" name="apellidos" class="campo"></td> <!--Campo de tipo texto-->
+                <td><h3 class="campo-texto">Correo electrónico</h3></td> <!--Titulo del campo-->
+            <td><input type="email" name="email" required class="campo"></td><br> <!--Campo de tipo email, ideal para leer @-->
+
+        <td><h3 class="campo-texto">Nombre de Usuario</h3></td> <!--Titulo del campo-->
+            <td><input type="text" name="user" required class="campo"></td><br> <!--Campo, donde usamos la 
+            palabra reservada "required" para darle a entender a nuestro formulario que es obligatorio-->
+
+        <td><h3 class="campo-texto" required>Sexo</h3></td><br>
+
+            <td><input type="radio" name="sexo" value="femenino" class="campo">Femenino</td> <!--Campo de tipo radio, 
+            con el mismo "name" porque así evitará doble selección de las opciones-->
+            <td><input type="radio" name="sexo" value="masculino" class="campo">Masculino</td><br>
+        <td><h3 class="campo-texto">Tengo habilidades en:</h3></td><br> <!--Campo de checkbox, selección múltiple-->
+            <td><input type="checkbox" name="ingles" value=ingles class="campo"><p>Ingles</p></td><br>
+            <div class="button-register"><!--Abrimos un contenedor para luego personalizar el botón de envío-->
+        <td><input type="submit" name="enviar" class=registro value="Registrarme"></td> <!--Botón de envío, de tipo "submit"-->
+            </div>  <!--Cerramos el contenedor de nuestro botón de envío-->      
+    </div> <!--cerramos contenedor de nuestros inputs-->
+    </form> <!--Cerramos nuestro formulario-->
+    </tr> <!--Cerramos nuestra tabla-->
+</div> <!--Cerramos nuestro contenedor de formulario-->
+</body> <!--Cerramos el cuerpo-->
+</html> <!--Cerramos el html-->
