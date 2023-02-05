@@ -1,0 +1,166 @@
+/*Esta es mi hoja de estilo Css, con las clases y atributos previamente agrupados, y definidos procederemos a
+personalizarlos a nuestro gusto*/
+
+*{ /*Esto es un selector universal que aplica a toda la pagina y todas las clases que en ellos nombres*/
+	margin: 0 auto; /*un pequeño truco para que todo los contenidos esten centrados horizontalmente*/
+
+}
+body{
+	background: rgb(238,174,202); /*Aqui defino un color sólido de fondo para mi cuerpo*/
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); /*Aqui a 
+	este fondo le hago un degradado con los parámetros que se ajusten a mi preferencia*/
+	
+}
+
+.container{
+/*clase container para personalizar nuestro container previamente definido en html definiremos las dimensiones*/
+	width: 800px; /*Ancho del div padre contenedor*/
+	height: 1100px; /*Alto del contenedor en pixeles*/
+	/*claro esta un color de fondo*/
+}
+header{ /*Aqui definiremos nuestro header con las siguientes características*/
+	background-color: #fffcf7; /*Color de fondo de su caja*/
+	width: 800px; /*el ancho de la caja*/
+	height: 220px; /*La altura*/
+	padding: 20px;/*el padding estira la caja añade pixeles*/
+	box-sizing: border-box; /*Esto es un pequeño truco que hace que el padding sea tomado del interior de la caja*/
+}
+header>h3{
+	text-align:center ; /*alineacion de texto centro*/
+}
+header>i{
+	text-align: right; /*derecha*/
+}
+nav{
+	/*etiquetado para barra de navegacion donde las características serán*/
+	height: 40px;
+	width: 700px;
+	padding: 10px;
+	border:#fffcf7;
+	background-color:#f5ccf9;
+	border-radius: 12px;
+}
+nav ul{
+	/*lista no ordenada*/
+	list-style: none;/*le quito el estilo que pueda proporcionar*/
+	padding: 10px;
+}
+nav>ul{
+	display: table;/*declaro que la forma que tomara este nav es de una tabla*/
+	overflow: hidden;/*digo que todo lo sobrante se oculte*/
+}
+nav>ul>li{
+	display: table-cell; /*ahora le digo al contenido que son la lista sean como una celda y se ordenen*/
+}
+nav>ul li a{
+	display: block/* lo obligo a que su comportamiento cree una caja*/
+	line-height= 20px; 
+	color: hsl(12, 68%, 32%); /*defino el color del texto*/
+	padding:20px;
+	position:relative;/*posiciones dentro de una caja es decir la ubicacion de la misma dentro de un contenedor padre*/
+	text-align:center;
+	text-decoration:none; /*para aquitar decoraciones al texto como el subrayado*/
+}
+nav>ul>li a:hover{/*esta etiqueta hover es muy funcional pues te deja ver que pasa si tu cursor pasa sobre el elemento excelente para botones*/
+	/*sirve para una animacion basica*/
+	background-color: #ff7979;
+	border-radius: 40px 40px 10px 10px; /*agrego borde segun el tamaño en pixeles, segun las agujas del reloj seria arriba derecha abajo izquierda, ese es su sentido */
+	padding: 20px;
+	color: white;
+}	
+.sectores{ /*Comenzaremos a personalizar los 3 sectores que llevan información, en primer lugar, 
+	definiendo sus dimensiones*/
+	width: 800px;
+	height: 800px;
+	display: flex;
+	box-sizing: border-box;
+	margin-top:20px;
+	
+}	
+.Joskani{ /*Estoy definiendo las características del contenedor donde alojo la informacion de joskani*/
+	width: 185px; /*Anchor*/
+	background-color:hsl(273, 90%, 80%); /*Color de fondo*/
+	box-sizing: border-box;
+	color: #2d3436; /*Color de la letra*/
+}
+.Joskani>h4{ /*Aqui pongo los parámetros que quiero modificar para la letra*/
+	text-align: center;
+}
+.Joskani>.datos{ /*Aqui defino los parametros que quiero para el contenedor interno donde van los datos, y centro el texto*/
+	text-align: center;
+}
+.Joskani>.inf{color:white; padding: 5px;} /*A la información le añadimos un color diferente a su letra, con un padding
+de 5px*/
+
+.paginaprincipal{ /*La pagina principal va a ser caracterizada con un centrado de margin:0 auto*/
+	margin: 0 auto;
+	text-align: center /*Aqui alineo mi texto al centro*/
+	width= 385px; /*Ancho de la caja*/
+	background-color: #E6E6FA;/*Color sólido de fondo de nuestra caja central*/
+
+	/* comenzamos a ser mas rigurosos con los detalles */
+}
+.paginaprincipal>h4{ /*le decimos que queremos ver nuestro texto h4 en el centro*/
+	text-align: center;
+}
+.dulce{/*en el contenedor de Dulce definimos:*/
+	background-color: #f5ccf9;/*Color de fondo sólido*/
+	width: 185px;/*Anchor de la sección*/
+
+}
+footer{ /*En el pie de página definiremos las dimensiones*/
+	width: 800px; /*Con esto definimos el ancho*/
+	padding: 20px; /*Ponemos un padding de 20px*/
+	box-sizing: border-box; 
+	background-color:#ecf0f1;
+	margin-top: 10px;		
+}
+
+/*Estilizando el formulario.html*/
+ .formulario{
+background-color: azure; /*El color de fondo para nuestra caja será claro*/
+border-radius: 10px; /*Esto será para reducir los bordes filosos*/
+color:#2d3436; /*Color de la letra*/
+font-size: 0.8em; /*Tamaño de la fuente*/
+padding: 10px; /*Padding definido para darle mas anchor a los campos*/
+margin: 0 auto; /*centrando*/
+width: 300px; /*ancho de nuestra caja donde irá el formulario*/
+ }
+.input{ /*definimos detalles de nuestros inputs*/
+	border:0;
+	outline:none;
+  }
+  .registro{ /*Aqui personalizaremos nuestro botón de registro*/
+	background-color: aqua; /*color aqua*/
+	padding: 10px; /*Espaciado de padding para vista agradable*/
+	border:0; /*Sin bordes*/
+	outline:none; 
+	text-align: center; /*alineo el texto del botón*/
+	width: 200px;
+	border-radius: 10px;
+  }
+  .campo{ /*Aqui definiremos nuestros campos*/
+	width: 250px; 
+	margin: 0 auto;
+	border-color:aquamarine;
+	padding: 10px;
+    border-radius: 8px;
+  }
+  .campo-texto{ /*Aqui a los subtítulos que indican los datos que deben introducirse en los campos, los centramos*/
+text-align: center;
+
+  }
+  .table { /*Personalizando la tabla de Base de Datos*/
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th { /*Personalizar la columna principal*/
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) { /*Esto agrega el color a las filas por separado*/
+	background-color: hsl(340, 100%, 90%);
+  }
